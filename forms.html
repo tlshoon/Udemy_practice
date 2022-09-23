@@ -11,23 +11,30 @@
 <body>
     <h1>Forms Demo</h1>
     <form action="/tacos">
+        <!-- 제출하지않음 -->
+        <button type="button">Please do not submit the form</button>  
         <p>
             <label for="username">Enter a Username:</label>
-            <input id="username" type="text" placeholder="username">
+            <input id="username" type="text" placeholder="username" name="username">
         </p>
         <p>
             <label for="password">Enter a Password:</label>
-            <input type="password" placeholder="password" id="password">
+            <input type="password" placeholder="password" id="password" name="password">
         </p>
+        <button>In the middle!</button>
         <p>
             <label for="color">Enter a Color:</label>
-            <input type="color" id="color">
+            <input type="color" id="color" name="color">
         </p>
         <p>
-            <label>Enter a Number:<input type="number" placeholder="enter a number"></label>
+            <label>Enter a Number:<input type="number" placeholder="enter a number" name="num"></label>
         </p>
-
+        <button>Submit </button>
+        <!-- 같은기능 -->
+        <input type="submit" value="Click Me!">
     </form>
 </body>
-
+<hr>
+<!-- Outside of a form -->
+<button>Not Inside Form</button>
 </html>
