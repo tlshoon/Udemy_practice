@@ -27,7 +27,7 @@
             <input type="color" id="color" name="color">
         </p>
         <p>
-            <label>Enter a Number:<input type="number" placeholder="enter a number" name="num"></label>
+            <label>Enter a Number:<input type="number" placeholder="enter a number" name="num" min="1" max="1000" step="2"></label>
         </p>
         <button>Submit </button>
         <!-- 같은기능 -->
@@ -51,6 +51,37 @@
     <form action="https://www.youtube.com/results">
         <input type="text" name="search_query">
         <button>Search Youtube</button>
+    </form>
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+        <p>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="xs">xs</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="s">s</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="m">m</label>
+        </p>
+        <p>
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarina</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="Cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" min="1" max="100" value="75" name="cheese_level">
+        </p>
+        <button>submit</button>
+        <p>
+            <label for="requests">Any Special Request?</label>
+            <br>
+            <textarea name="requests?" id="requests" cols="40" rows="10" placeholder="Type something here..."></textarea>
+        </p>
     </form>
 </body>
 </html>
