@@ -12,7 +12,7 @@
     <h1>Forms Demo</h1>
     <form action="/tacos">
         <!-- 제출하지않음 -->
-        <button type="button">Please do not submit the form</button>  
+        <button type="button">Please do not submit the form</button>
         <p>
             <label for="username">Enter a Username:</label>
             <input id="username" type="text" placeholder="username" name="username">
@@ -27,7 +27,8 @@
             <input type="color" id="color" name="color">
         </p>
         <p>
-            <label>Enter a Number:<input type="number" placeholder="enter a number" name="num" min="1" max="1000" step="2"></label>
+            <label>Enter a Number:<input type="number" placeholder="enter a number" name="num" min="1" max="1000"
+                    step="2"></label>
         </p>
         <button>Submit </button>
         <!-- 같은기능 -->
@@ -80,9 +81,27 @@
         <p>
             <label for="requests">Any Special Request?</label>
             <br>
-            <textarea name="requests?" id="requests" cols="40" rows="10" placeholder="Type something here..."></textarea>
-        </p>
+            <textarea name="requests?" id="requests" cols="40" rows="10"
+                placeholder="Type something here..."></textarea>
     </form>
-</body>
-</html>
+    </p>
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+        </p>
+        <p>
+            <label for="email">email</label>
+            <!-- <input type="email" required> -->
+            <input type="url">
+        </p>
 
+        <button>submit</button>
+    </form>
+
+</body>
+
+</html>
