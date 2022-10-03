@@ -67,6 +67,19 @@ a:hover {
     background-color: #02c39a;
 }
  /* 같은 유형의 n번째 */
-.post:nth-of-type(2n) {
+.post:nth-of-type(2n) { 
     background-color: #dfe8dc;
 }
+
+h2::first-letter
+{
+    font-size: 50px;
+}
+p::first-line {
+    color: red;
+} 
+p::selection {
+    background-color: #fcbf49;
+}
+
+/* 명시도  !important > ID > CLASS > ELEMENT */
